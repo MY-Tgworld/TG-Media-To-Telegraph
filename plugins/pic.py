@@ -1,4 +1,4 @@
-# This is bot coded by @No_OnE_Kn0wS_Me and used for educational purposes only
+# This is bot coded by @Noob_admin and used for educational purposes only
 # Copyright of all images uploaded by this bot is goes to respected owners
 
 import os
@@ -9,7 +9,7 @@ from telegraph import upload_file
 async def start(client, message):
     await client.send_message(
         chat_id=message.chat.id,
-        text=f"Hello {message.from_user.first_name},\n<b>I'm a Telegram To Telegra.ph Image/Video Uploader Bot. \n Created By @MaI_BotS</b> \n  Do /help For More",
+        text=f"Hello {message.from_user.first_name},\n<b>I'm a Telegram To Telegra.ph Image/Video Uploader Bot. \n Created By @noob_admin</b> \n  Do /help For More",
         reply_to_message_id=message.message_id
     )
 
@@ -28,7 +28,7 @@ async def getimage(client, message):
         os.makedirs(location)
     imgdir = location + "/" + str(message.chat.id) + "/" + str(message.message_id) +".jpg"
     dwn = await client.send_message(
-          text="<b>Downloading...</b>",
+          text="<b>☑️Downloading...</b>",
           chat_id = message.chat.id,
           reply_to_message_id=message.message_id
           )          
@@ -36,7 +36,7 @@ async def getimage(client, message):
             message=message,
             file_name=imgdir
         )
-    await dwn.edit_text("<b>Uploading...</b>")
+    await dwn.edit_text("<b>☑️Uploading...</b>")
     try:
         response = upload_file(imgdir)
     except Exception as error:
@@ -106,6 +106,6 @@ async def getanime(client, message):
 async def text(client, message):
     await client.send_message(
         chat_id=message.chat.id,
-        text=f"Hello {message.from_user.first_name},\n<b>Please Don't Spam Here \n Send Me A Photo Or Video To Convert It In Telegra.ph Link \n \n Bot Created By : @Mai_bOTs </b>",
+        text=f"Hello {message.from_user.first_name},\n<b>Please Don't Spam Here \n Send Me A Photo Or Video To Convert It In Telegra.ph Link \n \n Bot Created By : @noob_admin </b>",
         reply_to_message_id=message.message_id
     )
