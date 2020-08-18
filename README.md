@@ -4,5 +4,4 @@
 
 ## deploy 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=
-https://github.com/MY-Tgworld/TG-Media-To-Telegraph)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MY-Tgworld/TG-Media-To-Telegraph)
