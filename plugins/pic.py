@@ -36,11 +36,11 @@ async def getimage(client, message):
             message=message,
             file_name=imgdir
         )
-    await dwn.edit_text("<b>Uploading</b>")
+    await dwn.edit_text("<b> 👀Uploading👀</b>")
     try:
         response = upload_file(imgdir)
     except Exception as error:
-        await dwn.edit_text(f"Oops Something Went Wrong\n{error} Contact @No_OnE_Kn0wS_Me")
+        await dwn.edit_text(f"Oops Something Went Wrong\n{error} Contact @Noob_admin")
         return
     await dwn.edit_text(f"https://telegra.ph{response[0]}")
     try:
@@ -90,7 +90,7 @@ async def getanime(client, message):
             message=message,
             file_name=animdir
         )
-    await dwn.edit_text("<b>Uploading...</b>")
+    await dwn.edit_text("<b>Uploading👀</b>")
     try:
         response = upload_file(animdir)
     except Exception as error:
@@ -106,6 +106,6 @@ async def getanime(client, message):
 async def text(client, message):
     await client.send_message(
         chat_id=message.chat.id,
-        text=f"Hello {message.from_user.first_name},\n<b>Please Don't Spam Here \n Send Me A Photo Or Video To Convert It In Telegra.ph Link \n \n Bot Created By : @Mai_bOTs </b>",
+        text=f"Hello {message.from_user.first_name},\n<b>Please Don't Spam Here \n Send Me A Photo Or Video To Convert It In Telegra.ph Link \n \n Bot Created By : @noob_admin </b>",
         reply_to_message_id=message.message_id
     )
